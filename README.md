@@ -1,4 +1,5 @@
 # Super sprint planner
+Super sprint planner is JIRA plagin that allow to plan SAFe super sprint.
 
 # Atlas info
 You have successfully created an Atlassian Plugin!
