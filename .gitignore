@@ -1,4 +1,12 @@
+# Mac files
+.DS_Store
+
+# Idea files
+.idea/
+ssp.iml
+
 # Compiled class file
+target/
 *.class
 
 # Log file
