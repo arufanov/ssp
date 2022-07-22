@@ -1,5 +1,5 @@
 #
-# Build and release plugin
+# Install Atlassian SDK
 #
 name: 'Install Atlassian SDK'
 author: ARufanov
