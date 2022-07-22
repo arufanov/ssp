@@ -1,13 +1,14 @@
-# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
-# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
-
-name: Java CI with Maven
+#
+# Build and release plugin
+#
+name: Release plugin
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  workflow_dispatch:
+      tags:
+        description: 'Test scenario tags'
+        required: false
+        type: boolean
 
 jobs:
   build:
@@ -31,7 +32,5 @@ jobs:
       run: atlas-version
     - name: Build package
       run: atlas-package
-    - name: Run unit tests
-      run: atlas-unit-test
-    - name: Run integration tests
-      run: atlas-integration-test
+    - name: Release package
+      run: atlas-release
