@@ -20,7 +20,7 @@ jobs:
         java-version: '8'
         distribution: 'liberica'
         cache: maven
-    - uses: .github/actions/atlas
+    - uses: ./.github/actions/atlas
     - name: Show version
       run: atlas-version
     - name: Build package
