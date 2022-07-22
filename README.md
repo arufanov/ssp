@@ -1,9 +1,15 @@
 # Super sprint planner
 Super sprint planner is JIRA plagin that allow to plan SAFe super sprint.
 
+# References
+Here are GitHub JIRA plugin references:
+* https://github.com/atlassian/jira-suite-utilities
+* https://github.com/everit-org/jira-timetracker-plugin
+* https://github.com/atlascommunity/jira-plugins-groovy
+* https://github.com/atlassian/jira-github-connector-plugin
+
 # Atlas info
 Here are the SDK commands you'll use immediately:
-
 * atlas-help - prints description for all commands in the SDK;
 * atlas-run - installs this plugin into the product and starts it on localhost;
 * atlas-debug - same as atlas-run, but allows a debugger to attach at port 5005;
