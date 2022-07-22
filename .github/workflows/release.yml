@@ -17,10 +17,6 @@ on:
           - info
           - warning
           - debug
-      tags:
-        description: 'Test scenario tags'
-        required: false
-        type: boolean
 
 jobs:
   build:
