@@ -21,7 +21,7 @@ jobs:
         distribution: 'liberica'
         cache: maven
     - name: Install Atlassin SDK
-      uses: actions/atlas
+      uses: ./.github/actions/atlas
     - name: Show version
       run: atlas-version
     - name: Build package
