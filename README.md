@@ -7,7 +7,6 @@ Here are GitHub JIRA plugin references:
 * https://github.com/everit-org/jira-timetracker-plugin
 * https://github.com/atlascommunity/jira-plugins-groovy
 * https://github.com/atlassian/jira-github-connector-plugin
-test
 
 # Atlas info
 Here are the SDK commands you'll use immediately:
