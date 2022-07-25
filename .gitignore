@@ -5,6 +5,10 @@
 .idea/
 ssp.iml
 
+# Maven files
+release.properties
+pom.xml.releaseBackup
+
 # Compiled class file
 target/
 *.class
