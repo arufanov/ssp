@@ -18,6 +18,11 @@
     <description>This is the com.a5lab.ssp:ssp plugin for Atlassian JIRA.</description>
     <packaging>atlassian-plugin</packaging>
 
+    <scm>
+        <connection>scm:git:git@github.com:arufanov/ssp.git</connection>
+        <developerConnection>scm:git:git@github.com:arufanov/ssp.git</developerConnection>
+    </scm>
+
     <dependencies>
         <dependency>
             <groupId>com.atlassian.jira</groupId>
