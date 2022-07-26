@@ -21,6 +21,16 @@ on:
         required: true
         default: 'ssp-1.0.0'
         type: string
+      email:
+        description: 'Email for git'
+        required: true
+        default: 'arufanov@gmail.com'
+        type: string
+      username:
+        description: 'Username for git'
+        required: true
+        default: 'Artem.Rufanov'
+        type: string
 
 jobs:
   build:
@@ -35,6 +45,6 @@ jobs:
       - name: Show version
         run: atlas-version
       - name: Congigure git
-        run: git config user.email "arufanov@gmail.com" && git config user.name "Artem.Rufanov"
+        run: git config user.email ${{ inputs.email }} && git config user.name  ${{ inputs.username }}
       - name: Release a new version
         run: atlas-release -DreleaseVersion=${{ inputs.release_version }} -DdevelopmentVersion=${{ inputs.development_version }} -Dtag=${{ inputs.tag }}
