@@ -23,6 +23,17 @@
         <developerConnection>scm:git:git@github.com:arufanov/ssp.git</developerConnection>
     </scm>
 
+    <distributionManagement>
+        <repository>
+            <id>release</id>
+            <url>file://${user.home}/.m2/repository</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshot</id>
+            <url>file://${user.home}/.m2/repository</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>com.atlassian.jira</groupId>
