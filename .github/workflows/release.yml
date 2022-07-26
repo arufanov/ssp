@@ -34,5 +34,7 @@ jobs:
         uses: ./.github/actions/atlas
       - name: Show version
         run: atlas-version
+      - name: Congigure git
+        run: git config user.email "arufanov@gmail.com" && git config user.name "Artem.Rufanov"
       - name: Release a new version
         run: atlas-release -DreleaseVersion=${{ inputs.release_version }} -DdevelopmentVersion=${{ inputs.development_version }} -Dtag=${{ inputs.tag }}
