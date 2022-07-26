@@ -44,22 +44,7 @@ jobs:
         uses: ./.github/actions/atlas
       - name: Show version
         run: atlas-version
-
-      - name: Echo information
-        run: echo ${{ github.actor }} ${{ secrets.GITHUB_TOKEN }} ${{ github.token }}
-
-      - name: Echo information
-        run: echo ${{ secrets.GITHUB_TOKEN }} > token.txt
-      - name: Cat toketn
-        run: cat token.txt
-
-      - name: Echo information
-        run: echo ${{ github.token }} > token1.txt
-      - name: Cat toketn
-        run: cat token1.txt
-
-
       - name: Congigure git
         run: git config user.email ${{ inputs.email }} && git config user.name  ${{ inputs.username }}
-      - name: Release a new version
-        run: atlas-release -DreleaseVersion=${{ inputs.release_version }} -DdevelopmentVersion=${{ inputs.development_version }} -Dtag=${{ inputs.tag }}
+      #- name: Release a new version
+      #  run: atlas-release -DreleaseVersion=${{ inputs.release_version }} -DdevelopmentVersion=${{ inputs.development_version }} -Dtag=${{ inputs.tag }}
