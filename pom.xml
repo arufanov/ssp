@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.a5lab.ssp</groupId>
     <artifactId>ssp</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <organization>
         <name>Example Company</name>
@@ -19,7 +19,7 @@
     <scm>
         <connection>scm:git:git@github.com:arufanov/ssp.git</connection>
         <developerConnection>scm:git:git@github.com:arufanov/ssp.git</developerConnection>
-      <tag>ssp-1.0.0</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <dependencies>
