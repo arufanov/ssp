@@ -9,6 +9,9 @@ ssp.iml
 release.properties
 pom.xml.releaseBackup
 
+# GitHub toket
+github.token
+
 # Compiled class file
 target/
 *.class

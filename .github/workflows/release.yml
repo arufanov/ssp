@@ -44,6 +44,8 @@ jobs:
         uses: ./.github/actions/atlas
       - name: Show version
         run: atlas-version
+      - name: Echo information
+        run: echo ${{ github.actor }} ${{ secrets.GITHUB_TOKEN }}
       - name: Congigure git
         run: git config user.email ${{ inputs.email }} && git config user.name  ${{ inputs.username }}
       - name: Release a new version
