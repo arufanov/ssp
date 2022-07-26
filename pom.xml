@@ -29,6 +29,7 @@
         </repository>
         <snapshotRepository>
             <id>snapshot</id>
+            <uniqueVersion>false</uniqueVersion>
             <url>file://${user.home}/.m2/repository</url>
         </snapshotRepository>
     </distributionManagement>
