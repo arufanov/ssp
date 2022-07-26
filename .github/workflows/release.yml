@@ -5,8 +5,22 @@ name: Release plugin
 
 on:
   workflow_dispatch:
-  release:
-    types: [created]
+    inputs:
+      release_version:
+        description: 'Release version'
+        required: true
+        default: '1.0.0'
+        type: string
+      development_version:
+        description: 'Development version'
+        required: true
+        default: '1.0.1-SNAPSHOT'
+        type: string
+      tag:
+        description: 'Tag'
+        required: true
+        default: 'ssp-1.0.0'
+        type: string
 
 jobs:
   build:
@@ -20,3 +34,5 @@ jobs:
         uses: ./.github/actions/atlas
       - name: Show version
         run: atlas-version
+      - name: Release a new version
+        run: atlas-release -DreleaseVersion=${{ inputs.release_version }} -DdevelopmentVersion=${{ inputs.development_version }} -Dtag=${{ inputs.tag }}
