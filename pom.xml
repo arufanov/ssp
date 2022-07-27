@@ -37,47 +37,54 @@
 
     <repositories>
         <repository>
-            <id>Atlassin public</id>
-            <name>Atlassin public</name>
-            <url>https://packages.atlassian.com/maven-public/</url>
+            <id>atlassian-public</id>
+            <url>https://maven.atlassian.com/repository/public</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+                <checksumPolicy>warn</checksumPolicy>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+                <checksumPolicy>warn</checksumPolicy>
+            </releases>
         </repository>
         <repository>
-            <id>Atlassin public snapshot</id>
-            <name>Atlassin public snapshot</name>
-            <url>https://packages.atlassian.com/maven-public-snapshot/</url>
-        </repository>
-        <repository>
-            <id>Atlassin 3rdparty</id>
-            <name>Atlassin 3rdparty</name>
-            <url>https://packages.atlassian.com/maven-3rdparty/</url>
+            <id>atlassian-plugin-sdk</id>
+            <url>file://${env.ATLAS_HOME}/repository</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+                <checksumPolicy>warn</checksumPolicy>
+            </releases>
         </repository>
     </repositories>
 
     <pluginRepositories>
         <pluginRepository>
-            <id>Atlassin maven 3rdparty</id>
-            <name>Atlassin maven 3rdparty</name>
-            <url>https://maven.atlassian.com/3rdparty/</url>
+            <id>atlassian-public</id>
+            <url>https://maven.atlassian.com/repository/public</url>
+            <releases>
+                <enabled>true</enabled>
+                <checksumPolicy>warn</checksumPolicy>
+            </releases>
+            <snapshots>
+                <updatePolicy>never</updatePolicy>
+                <checksumPolicy>warn</checksumPolicy>
+            </snapshots>
         </pluginRepository>
         <pluginRepository>
-            <id>Atlassin maven public</id>
-            <name>Atlassin maven public</name>
-            <url>https://maven.atlassian.com/content/repositories/atlassian-public/</url>
-        </pluginRepository>
-        <pluginRepository>
-            <id>Atlassin public</id>
-            <name>Atlassin public</name>
-            <url>https://packages.atlassian.com/maven-public/</url>
-        </pluginRepository>
-        <pluginRepository>
-            <id>Atlassin public snapshot</id>
-            <name>Atlassin public snapshot</name>
-            <url>https://packages.atlassian.com/maven-public-snapshot/</url>
-        </pluginRepository>
-        <pluginRepository>
-            <id>Atlassin 3rdparty</id>
-            <name>Atlassin 3rdparty</name>
-            <url>https://packages.atlassian.com/maven-3rdparty/</url>
+            <id>atlassian-plugin-sdk</id>
+            <url>file://${env.ATLAS_HOME}/repository</url>
+            <releases>
+                <enabled>true</enabled>
+                <checksumPolicy>warn</checksumPolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </pluginRepository>
     </pluginRepositories>
 
