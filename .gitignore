@@ -5,6 +5,13 @@
 .idea/
 ssp.iml
 
+# Maven files
+release.properties
+pom.xml.releaseBackup
+
+# GitHub toket
+github.token
+
 # Compiled class file
 target/
 *.class
