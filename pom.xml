@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.a5lab.ssp</groupId>
@@ -19,8 +20,8 @@
     <scm>
         <connection>scm:git:git@github.com:arufanov/ssp.git</connection>
         <developerConnection>scm:git:git@github.com:arufanov/ssp.git</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
 
     <distributionManagement>
         <repository>
@@ -33,6 +34,52 @@
             <url>file://${user.home}/.m2/repository</url>
         </snapshotRepository>
     </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>Atlassin public</id>
+            <name>Atlassin public</name>
+            <url>https://packages.atlassian.com/maven-public/</url>
+        </repository>
+        <repository>
+            <id>Atlassin public snapshot</id>
+            <name>Atlassin public snapshot</name>
+            <url>https://packages.atlassian.com/maven-public-snapshot/</url>
+        </repository>
+        <repository>
+            <id>Atlassin 3rdparty</id>
+            <name>Atlassin 3rdparty</name>
+            <url>https://packages.atlassian.com/maven-3rdparty/</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>Atlassin maven 3rdparty</id>
+            <name>Atlassin maven 3rdparty</name>
+            <url>https://maven.atlassian.com/3rdparty/</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>Atlassin maven public</id>
+            <name>Atlassin maven public</name>
+            <url>https://maven.atlassian.com/content/repositories/atlassian-public/</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>Atlassin public</id>
+            <name>Atlassin public</name>
+            <url>https://packages.atlassian.com/maven-public/</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>Atlassin public snapshot</id>
+            <name>Atlassin public snapshot</name>
+            <url>https://packages.atlassian.com/maven-public-snapshot/</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>Atlassin 3rdparty</id>
+            <name>Atlassin 3rdparty</name>
+            <url>https://packages.atlassian.com/maven-3rdparty/</url>
+        </pluginRepository>
+    </pluginRepositories>
 
     <dependencies>
         <dependency>
