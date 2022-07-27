@@ -1,5 +1,5 @@
 # Super sprint planner
-Super sprint planner is JIRA plagin that allow to plan SAFe super sprint.
+Super sprint planner is JIRA plugin that allow to plan SAFe super sprint.
 
 # References
 Here are GitHub JIRA plugin references:
@@ -9,10 +9,11 @@ Here are GitHub JIRA plugin references:
 * https://github.com/atlassian/jira-github-connector-plugin
 
 # Setup Idea environment
-export JAVA_HOME=/usr/local/Cellar/openjdk@8/1.8.0+322
-export PATH=$PATH:$JAVA_HOME/bin
-export ATLAS_HOME=/Applications/Atlassian/atlassian-plugin-sdk-8.2.7
-export M2_HOME=/Applications/Atlassian/atlassian-plugin-sdk-8.2.7/apache-maven-3.5.4
+Setup env variable to work with Idea:
+* export JAVA_HOME=/usr/local/Cellar/openjdk@8/1.8.0+322
+* export PATH=$PATH:$JAVA_HOME/bin
+* export ATLAS_HOME=/Applications/Atlassian/atlassian-plugin-sdk-8.2.7
+* export M2_HOME=/Applications/Atlassian/atlassian-plugin-sdk-8.2.7/apache-maven-3.5.4
 
 # Atlas info
 Here are the SDK commands you'll use immediately:
