@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.a5lab.ssp</groupId>
+    <groupId>com.a5lab</groupId>
     <artifactId>ssp</artifactId>
     <version>1.0.1-SNAPSHOT</version>
 
@@ -14,7 +14,7 @@
     </organization>
 
     <name>ssp</name>
-    <description>This is the com.a5lab.ssp:ssp plugin for Atlassian JIRA.</description>
+    <description>This is the SAFe super sprint planner(ssp) plugin for Atlassian JIRA.</description>
     <packaging>atlassian-plugin</packaging>
 
     <scm>
