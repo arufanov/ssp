@@ -25,7 +25,7 @@ Add these lines to .zshrc
 Setup env variable to work with Idea:
 * Edit project structure to set up project sdk to 1.8
 * Edit project structure to set up language level to 8
-* Edit preferences build tools maven to setup maven home path:
+* Edit preferences build tools maven to set up maven home path:
   /usr/local/Cellar/atlassian-plugin-sdk/8.2.7/libexec/apache-maven-3.5.4
 * Edit preferences build tools maven to set up user settings file:
   /usr/local/Cellar/atlassian-plugin-sdk/8.2.7/libexec/apache-maven-3.5.4/conf/settings.xml
