@@ -8,12 +8,25 @@ Here are GitHub JIRA plugin references:
 * https://github.com/atlascommunity/jira-plugins-groovy
 * https://github.com/atlassian/jira-github-connector-plugin
 
+# Setup Java environment
+Setup Java environment to work:
+* brew install openjdk@8
+* brew tap atlassian/tap
+* export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_322`
+* brew install atlassian/tap/atlassian-plugin-sdk
+
 # Setup Idea environment
 Setup env variable to work with Idea:
 * export JAVA_HOME=/usr/local/Cellar/openjdk@8/1.8.0+322
 * export PATH=$PATH:$JAVA_HOME/bin
 * export ATLAS_HOME=/Applications/Atlassian/atlassian-plugin-sdk-8.2.7
 * export M2_HOME=/Applications/Atlassian/atlassian-plugin-sdk-8.2.7/apache-maven-3.5.4
+
+* export JAVA_HOME=/usr/local/Cellar/openjdk@8/1.8.0+322
+* export PATH=$PATH:$JAVA_HOME/bin
+* export ATLAS_HOME=/Applications/Atlassian/atlassian-plugin-sdk-8.2.7
+* export M2_HOME=/Applications/Atlassian/atlassian-plugin-sdk-8.2.7/apache-maven-3.5.4
+
 
 # Atlas info
 Here are the SDK commands you'll use immediately:
